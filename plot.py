@@ -463,7 +463,7 @@ def plot_hodograph(data, parameters, fname=None, web=False, fixed=False, archive
     from cartopy.feature import ShapelyFeature
     from cartopy.io.shapereader import Reader
     import pyart
-    fp='' #*** File path directory. Ex: '/home/[user]/data/L3/'
+    fp='' #*** File path directory to store L3 data file. Ex: '/home/[user]/data/L3/'
     url=f'https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p19r0/SI.{data.rid.lower()}/sn.last'
     with urllib.request.urlopen(url) as response, open(f'{fp}{data.rid}', 'wb') as out_file:
         shutil.copyfileobj(response, out_file) 
