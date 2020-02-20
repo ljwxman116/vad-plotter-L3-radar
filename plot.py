@@ -244,7 +244,7 @@ def plot_hodograph(data, parameters, fname=None, web=False, fixed=False, archive
     if fname is not None:
         img_file_name = fname
     else:
-        img_file_name = "/home/ljwxman116/web/imgs/vwp/%s_vad.png" % data.rid
+        img_file_name = "%s_vad.png" % data.rid
 
     u, v = vec2comp(data['wind_dir'], data['wind_spd'])
 
